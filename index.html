@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업 신청</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .class-option {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>수업 신청</h1>
+
+    <div class="class-option">
+        <h2>수업 1</h2>
+        <input type="text" id="phone1" placeholder="전화번호 입력">
+        <button onclick="registerForClass('class1', 'phone1')">신청</button>
+        <p>대기 인원: <span id="waitlist1">0</span></p>
+    </div>
+
+    <div class="class-option">
+        <h2>수업 2</h2>
+        <input type="text" id="phone2" placeholder="전화번호 입력">
+        <button onclick="registerForClass('class2', 'phone2')">신청</button>
+        <p>대기 인원: <span id="waitlist2">0</span></p>
+    </div>
+
+    <div class="class-option">
+        <h2>수업 3</h2>
+        <input type="text" id="phone3" placeholder="전화번호 입력">
+        <button onclick="registerForClass('class3', 'phone3')">신청</button>
+        <p>대기 인원: <span id="waitlist3">0</span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
